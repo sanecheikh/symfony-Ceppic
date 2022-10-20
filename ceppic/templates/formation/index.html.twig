@@ -10,7 +10,7 @@
             <tr>
                 <th>Id</th>
                 <th>Titre</th>
-                <th>Category</th>
+                <th>Description</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -18,8 +18,8 @@
         {% for formation in formations %}
             <tr>
                 <td>{{ formation.id }}</td>
-                <td>{{ formation.Titre }}</td>
-                <td>{{ formation.category }}</td>
+                <td>{{ formation.titre }}</td>
+                <td>{{ formation.description }}</td>
                 <td>
                     <a href="{{ path('app_formation_show', {'id': formation.id}) }}">show</a>
                     <a href="{{ path('app_formation_edit', {'id': formation.id}) }}">edit</a>
